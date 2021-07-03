@@ -19,12 +19,12 @@ public class Main {
 
 
         //enter gmail credentials
-        driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("test1014409@gmail.com");
+        driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("***");
         driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span")).click();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[type=password")));
-        driver.findElement(By.cssSelector("input[type=password]")).sendKeys("vgyuhb852");
+        driver.findElement(By.cssSelector("input[type=password]")).sendKeys("***");
 
         driver.findElement(By.xpath("//*[@id=\"passwordNext\"]/div/button/span")).click();
 
